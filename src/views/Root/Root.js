@@ -7,6 +7,7 @@ import NotesView from '../NotesView/NotesView';
 import Header from '../../components/Header/Header';
 import Modal from '../../components/Modal/Modal';
 
+
 const initialStateItems = [
   {
     image: "https://pbs.twimg.com/profile_images/906557353549598720/oapgW_Fp.jpg",
@@ -19,7 +20,7 @@ const initialStateItems = [
 class Root extends React.Component {
   state = {
     items: [...initialStateItems],
-	isModalOpen: false,
+	isModalOpen: true,
   };
 
   addItem = e => {
